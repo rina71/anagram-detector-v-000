@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(word)
-  word.detect{|c| c == @words}
+  word.select{|c| c == @words}
 
   end
 end# Your code goes here!
