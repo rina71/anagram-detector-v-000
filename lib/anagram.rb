@@ -8,8 +8,12 @@ class Anagram
   end
 
   def match(word)
-  a = word.select{|c| c.split("").sort == @words.sort}
-
-  a
+    #word is array.
+    #array has to match with object @words.
+  a = word.split("").sort # [[a b]]
+  a.map{|c|c == @words.sort}
+  # a = word.select{|c| c.split("").sort == @words}
+  # 
+  # a
   end
 end# Your code goes here!
