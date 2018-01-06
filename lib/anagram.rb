@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(word)
-  a = word.map{|c| c.split("")} # [[a b]]
+  a = word.map{|c| c.split("").sort} # [[a b]]
   binding.pry
   b = a.select{|c|c == @words.split("").sort}
   b
