@@ -12,6 +12,7 @@ class Anagram
   binding.pry
   b = a.select{|c|c == @words.split("").sort}
   c = [b.join]
+  c
   # a = word.select{|c| c.split("").sort == @words}
   #
   # a
