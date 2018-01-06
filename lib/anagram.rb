@@ -11,7 +11,7 @@ class Anagram
     #word is array.
     #array has to match with object @words.
   a = word.map{|c| c.split("")} # [[a b]]
-  a.map{|c|c == @words.sort}
+  a.select{|c|c == @words.sort}
   # a = word.select{|c| c.split("").sort == @words}
   #
   # a
