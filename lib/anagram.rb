@@ -8,8 +8,8 @@ class Anagram
   end
 
   def match(word)
-  a = word.select{|c| c.split("").sort == @words}
-binding.pry
+  a = word.select{|c| c.split("").sort == @words.sort}
+
   a
   end
 end# Your code goes here!
