@@ -11,6 +11,7 @@ class Anagram
   a = word.map{|c| c.split("")} # [[a b]]
   # binding.pry
   a.select{|c|c == @words.split("").sort}
+  a.join
   # a = word.select{|c| c.split("").sort == @words}
   #
   # a
