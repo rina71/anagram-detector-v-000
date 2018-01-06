@@ -13,7 +13,7 @@ class Anagram
   a = word.split("").sort # [[a b]]
   a.map{|c|c == @words.sort}
   # a = word.select{|c| c.split("").sort == @words}
-  # 
+  #
   # a
   end
 end# Your code goes here!
