@@ -7,6 +7,6 @@ class Anagram
 
   def match(word)
   word.detect{|c| c == @words}
-    
+
   end
 end# Your code goes here!
