@@ -1,3 +1,5 @@
+require 'pry'
+
 class Anagram
   attr_accessor :name
 
@@ -7,7 +9,7 @@ class Anagram
 
   def match(word)
   a = word.select{|c| c.split("").sort == @words}
-
+binding.pry
   a
   end
 end# Your code goes here!
