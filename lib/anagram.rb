@@ -10,7 +10,7 @@ class Anagram
   def match(word)
     #word is array.
     #array has to match with object @words.
-  a = word.split("").sort # [[a b]]
+  a = word.map{|c| c.split("")} # [[a b]]
   a.map{|c|c == @words.sort}
   # a = word.select{|c| c.split("").sort == @words}
   #
